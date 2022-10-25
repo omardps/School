@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>School</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+  
+    <div class="sidebar">
+        <header> MASTO-SCHOOL</header>
+        <ul>
+            <li>
+                <a class="active" href="#home">
+                <i class="fas fa-house-user"></i> <span>Inicio</span>
+                </a>
+            </li>
+            <li><a href="#about">
+                <i class="fas fa-info-circle"></i> <span>Información</span>
+                </a>
+            </li>
+            <li>
+                <a href="#old">
+                    <i class="fas fa-car"></i> <span>Experiencia</span>
+                </a>
+            </li>
+            <li>
+                <a href="#mony">
+                    <i class="fas fa-money-check-alt"></i> <span>Precio</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <i class="fas fa-id-badge"></i> <span>Contacto</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <section class="home" id="home">
+        <div class="cont">
+            <h1>CLASES DE MANEJO</h1>
+            <h1>¿¿NO SABES MANEJAR??</h1>
+            <h2>¿QUE ESTAS ESPERANDO?</h2>
+            <h3>Reserva tu lugar y comienza... </h3>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="cont">
+            <h1>Clases de manejo.</h1>
+            <h1>Estándar o Automático.</h1>
+            <h2> Tienes licencia y te falta práctica o experiencia vial.</h2>
+            <h2>¿¿¿Eres principiante??? </h2>
+            <h2>Es tú oportunidad de aprender a manejar profesionalmente.</h2>
+            <p>Clases 100% prácticas, aprende a estacionar, vueltas,</p>
+            <p>en plano y en subidas hasta andar en trafico</p>          
+        </div>
+    </section>
+
+
+    <section class="old" id="old">
+        <div class="new" > <h1>Experiencia</h1>         
+
+            <div class="new-card" >   
+            <h2>Maestro: Rogelio Flores</h2>
+            <ul>
+                <li><span>Años manejando</span> </li>
+                <li><span> -5 Años Camion 3/4 Tol.</span> </li>
+                <li><span> -10 Años Conductor de transporte público</span> </li>
+                <li><span> -12 Años Automóvil</span> </li>
+            </ul>
+           </div> 
+        </div>
+        <div class="masto"><img src="img/Clase1.jpg" alt=""></div>
+    </section>
+
+    <section class="mony" id="mony"> ,
+        <div class="container">
+         <h1>Precio</h1>
+            <h2>5 HRS. $1200</h2>
+            <h2>10 HRS, $2000</h2>
+            <h2>Mas Información</h2>
+            <h2><i class="fab fa-whatsapp"> +5576901075</i> </h2>
+                 
+        </div>
+    </section>
+
+
+
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading">Contacto</h1>
+        
+        <div class="row">
+ 
+            <form action="">
+        
+                <div class="inputBox">
+                    <input type="text" required>
+                    <label>name</label>
+                </div>
+                <div class="inputBox">
+                    <input type="email" required>
+                    <label>email</label>
+                </div>
+                <div class="inputBox">
+                    <input type="number" required>
+                    <label>number</label>
+                </div>
+                <div class="inputBox">
+                    <textarea required name="" id="" cols="20" rows="5"></textarea>
+                    <label>message</label>
+                </div>
+        
+                <input type="submit" value="send message" class="btn">
+        
+            </form>
+        
+        </div>
+        
+        </section>
+
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+ * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:  'Roboto', sans-serif;
+}
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    transition: all .3s ease;
+}
+
+.sidebar header {
+    font-size: 23px;
+    color:#1E90FF;
+    line-height: 75px;
+    text-align:justify;
+    background: #2F4F4F;
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: 	#FFF5EE;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    transition: .2s;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    background:#1E90FF;
+    border-radius: .1px;
+    cursor: pointer;
+}
+
+label #btn {
+    left: 50px;
+    top: 25px;
+    font-size: 55px;
+    color:#fff;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #FFF;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+#check:checked~label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked~label #cancel {
+    left: 195px;
+}
+
+#check:checked~section {
+    margin-left: 250px;
+}
+
+.home{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url(../img/car2.png) center no-repeat;  
+    flex-wrap: wrap;
+}
+.home .image{
+    flex:1 1 40rem;
+}
+.home .image img{
+    width: 100%;
+}
+.home .cont{
+    flex:1 1 40rem;
+}
+.home .cont h1{
+    font-size: 4rem;
+    color:#000099;
+    padding:2rem 0;
+    text-align: center;
+}
+.home .cont h2{
+    font-size: 2rem;
+    color:#000099;
+    /*#2F4F4F*/
+    padding:1rem 0;
+    text-align: center;
+}
+.home .cont h3{
+    font-size: 2rem;
+    color: #000099;
+    padding:1rem 0;
+    text-align: center;
+}
+
+
+
+
+
+.about{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: url(../img/car1.jpg) center #7B68EE;
+}
+
+.about .cont{
+    flex:1 1 40rem;
+}
+    
+.about .cont h1{
+    font-size: 3.5rem;
+    color:#FFD700;
+    margin: 1.5rem;
+    text-align: center;
+}
+.about .cont h2{
+    font-size: 2rem;
+    color:#00FF00;
+    margin: 1.5rem;
+    text-align: center;
+}
+.about .cont p{
+    font-size: 1.5rem;
+    color:#FFD700;
+    padding: .5rem;
+    margin: .1 rem;
+    text-align: center;
+}
+
+.about .cont .auto{
+    margin: 1rem;
+    padding-left: 12rem;
+    
+    
+
+}    
+
+
+
+
+
+.old{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #B0C4DE;
+    background:url(../img/car3.jpg) center;
+}
+.old h1
+{
+    font-size: 3.5rem;
+    color: #DCDCDC;
+    margin: 1.5rem;
+    align-items: center;
+    text-align: center;
+}
+.old .new-card{    
+    align-items: flex-start;
+    justify-content: center;
+}
+.old .new-card{
+    flex:1 1 40rem;
+}
+.old .new-card h2
+{
+    font-size: 2rem;
+    color:  #DCDCDC;
+    margin: 1.5rem;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+.old .new-card h3
+{
+    font-size: 1.5rem;
+    color: #FFF;
+    margin: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.old span
+{
+    font-size: 1.5rem;
+    color: #FFF;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+.mony{
+    min-height: 100vh;
+    background:url(../img/A3.jpg) center #20B2AA;
+}
+.mony .container h1{
+    font-size: 3.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+.mony .container h2{
+    font-size: 4rem;
+    color:#FFF; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding:1.5REM 0;
+}
+
+
+
+
+
+.contact{
+    background: url(../img/S.jpg) center no-repeat #ADD8E6;
+}
+.contact h1{
+    font-size: 3.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    border:.1rem solid rgba(0,0,0,.3);
+  }
+  
+  .contact .row{
+    width:100%;
+    flex:1 1 40rem;
+  }
+  
+  .contact .row form{
+    padding:1rem;
+    flex:1 1 40rem;
+    
+  }
+  
+  .contact .row form .inputBox{
+    position: relative;
+  }
+  
+  .contact .row form .inputBox input, .contact .row form .inputBox textarea{
+    width:100%;
+    border-bottom: .2rem solid gray;
+    padding:.5rem 0;
+    margin:1rem 0;
+    font-size: 1rem;
+    text-transform: none;
+    color:blue;
+  }
+  
+  .contact .row form .inputBox textarea{
+    resize: none;
+    height:10rem;
+  }
+  
+  .contact .row form .inputBox input:focus,
+  .contact .row form .inputBox textarea:focus{
+    border-color: green;
+  }
+  
+  .contact .row form .inputBox label{
+    position: absolute;
+    top:1.5rem; left: 0;
+    font-size: 1rem;
+  }
+  
+  .contact .row form .inputBox input:focus ~ label,
+  .contact .row form .inputBox textarea:focus ~ label,
+  .contact .row form .inputBox input:valid ~ label,
+  .contact .row form .inputBox textarea:valid ~ label{
+    top:-.5rem;
+    font-size: 1.5rem;
+    color:darkcyan;
+  }
+
+
+
